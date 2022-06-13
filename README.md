@@ -1,29 +1,45 @@
-# BkiariePalindrome
+# Palindrome detector
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bkiarie_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`bkiarie_palindrome` is a sample Ruby gem to test whether a given input is a sting.
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+To install `bkiarie_palindrome`, add this line to your application's `Gemfile`:
 
-    $ bundle add bkiarie_palindrome
+```
+gem 'bkiarie_palindrome'
+```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Then install as follows:
 
-    $ gem install bkiarie_palindrome
+```
+$ bundle install
+```
+
+Or install it directly using `gem`:
+
+```
+$ gem install bkiarie_palindrome
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+`bkiarie_palindrome` adds a `palindrome?` method to the `String` class, and can be used as follows:
 
-## Development
+```
+$ irb
+>> require 'bkiarie_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> "deified".palindrome?
+=> true
+>> "Able was I, ere I saw Elba.".palindrome?
+=> true
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## License
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bkiarie_palindrome.
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

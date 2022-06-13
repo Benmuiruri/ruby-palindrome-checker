@@ -4,7 +4,7 @@ require_relative "lib/bkiarie_palindrome/version"
 
 Gem::Specification.new do |spec|
   spec.name = "bkiarie_palindrome"
-  spec.version = BkiariePalindrome::VERSION
+  spec.version = "0.2.0"
   spec.authors = ["Benmuiruri"]
   spec.email = ["ben.muiruri13@gmail.com"]
 

@@ -3,6 +3,7 @@
 require_relative "bkiarie_palindrome/version"
 
 module BkiariePalindrome
+  VERSION = "0.2.0"
   def palindrome?
     processed_content == processed_content.reverse
   end

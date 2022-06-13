@@ -2,7 +2,7 @@
 
 require_relative "bkiarie_palindrome/version"
 
-class String
+module BkiariePalindrome
   def palindrome?
     processed_content == processed_content.reverse
   end
@@ -12,4 +12,8 @@ class String
   def processed_content
     scan(/[a-z]/i).join.downcase
   end
+end
+
+class String
+  include BkiariePalindrome
 end

@@ -10,10 +10,14 @@ module BkiariePalindrome
   private
 
   def processed_content
-    scan(/[a-z]/i).join.downcase
+    to_s.scan(/[a-z1-9]/i).join.downcase
   end
 end
 
 class String
+  include BkiariePalindrome
+end
+
+class Integer
   include BkiariePalindrome
 end

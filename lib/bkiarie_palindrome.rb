@@ -2,9 +2,10 @@
 
 require_relative "bkiarie_palindrome/version"
 
+# Gem functionality
 module BkiariePalindrome
   VERSION = "0.2.0"
-  
+
   def palindrome?
     processed_content == processed_content.reverse
   end

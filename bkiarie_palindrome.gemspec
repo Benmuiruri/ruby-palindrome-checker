@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Benmuiruri"]
   spec.email = ["ben.muiruri13@gmail.com"]
 
-  spec.summary = %q{Palindrome detector}
-  spec.description = %{Ben Kiarie's Ruby palindrome detector}
+  spec.summary = "Palindrome detector"
+  spec.description = %(Ben Kiarie's Ruby palindrome detector)
   spec.homepage = "https://github.com/Benmuiruri/ruby-palindrome-checker"
   spec.required_ruby_version = ">= 2.6.0"
 

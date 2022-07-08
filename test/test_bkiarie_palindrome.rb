@@ -23,6 +23,10 @@ class TestBkiariePalindrome < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
+  def test_blank_palindrome
+    refute "".palindrome?
+  end
+
   def test_integer_non_palindrome
     refute 12_345.palindrome?
   end

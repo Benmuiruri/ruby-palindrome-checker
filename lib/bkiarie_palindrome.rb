@@ -7,7 +7,11 @@ module BkiariePalindrome
   VERSION = "0.2.0"
 
   def palindrome?
-    processed_content == processed_content.reverse
+    if processed_content.empty?
+      false
+    else
+      processed_content == processed_content.reverse
+    end
   end
 
   private
